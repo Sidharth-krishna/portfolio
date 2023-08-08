@@ -1,0 +1,275 @@
+* {
+  font-family: "Mynerve", cursive;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  align-items: center;
+  width: 85%;
+}
+
+.logo {
+  width: 130px;
+}
+
+.linkitems {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* pesudo class */
+/* selector:pesudo-class(property:value) */
+.links:hover {
+  color: red;
+  font-size: 20px;
+}
+
+.title {
+  margin-top: 13%;
+  margin-left: 8%;
+}
+
+.title_h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#lastname {
+  color: orangered;
+}
+
+.download {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.images { 
+  position: absolute;
+  width: 45%;
+  height: 80%;
+  bottom: 0;
+  right: 30px;
+}
+
+.images img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  bottom: 0px;
+  transform: translatex(-50%);
+  transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape {
+  bottom: 70px;
+}
+
+.images:hover #girl {
+  left: 40%;
+}
+
+#about {
+  margin: 13% 8% opx 8%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading span {
+  color: orangered;
+  font-size: 25px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-img {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.about-details {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.information {
+  margin-top: 2rem;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box span {
+  margin-left: 1rem;
+}
+
+#skills {
+  margin: 8% 8% 0% 8%;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.heading h2 {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  margin-bottom: 1rem;
+  position:relative;
+  letter-spacing: normal;
+}
+
+.base-bar{
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1px;
+}
+.html-bar{
+  width: 95%;
+  height: 0.5rem;
+  background-color: rgb(209, 240, 9);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1px;
+}
+.css-bar{
+  width: 85%;
+  height: 0.5rem;
+  background-color: rgb(3, 161, 24);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1px;
+}
+.js-bar{
+  width: 80%;
+  height: 0.5rem;
+  background-color: rgb(245, 6, 6);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1px;
+}
+.react-bar{
+  width: 95%;
+  height: 0.5rem;
+  background-color: rgb(4, 17, 255);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1px;
+}
+.contact h1{
+  text-align: center;
+  font-size:50px ;
+}
+.contact span {
+  font-size: 30px;
+  text-align: 7px;
+color: rgb(7, 131, 84);
+}
+.icon-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap:1rem;
+}
+.icon ,.up-arrow{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+
+}
+.icon i{
+  color: black;
+  font-size: 30px;
+}
+.icon:hover{
+  background-image: linear-gradient(to bottom right,yellow,red);
+}
+.icon:hover i{
+  color: aliceblue;
+  animation: flicker 0.5s;
+}
+@keyframes flicker{
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform:skew(-15deg) ;
+  }
+  30%{transform: skew(15deg);
+
+  }
+  40%{
+    transform: rotate(-15deg);
+  }
+}
+footer p{
+  text-align: center;
+  padding: 20px;
+}
+.up-arrow{
+  float: right;
+  background-image: linear-gradient(to bottom right,yellow,red);
+  margin: 0px 10px 50px 0px;
+
+}
+.up-arrow :hover{
+color: antiquewhite;
+}
